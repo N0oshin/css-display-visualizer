@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Display Property Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1>Visualizing CSS Display Properties</h1>
+
+  <div class="controls">
+    <button id="blockBtn">Block</button>
+    <button id="inlineBtn">Inline</button>
+    <button id="inlineBlockBtn">Inline-Block</button>
+  </div>
+
+
+  <div class="demo-container">
+    <p><strong>Current display:</strong> <span id="currentDisplay">block</span></p>
+    <div class="description" id="description">
+      Block elements take the full width available and start on a new line.
+    </div>
+
+    <div class="resize-controls">
+      <label>
+        Width (px):
+        <input type="number" id="widthInput" value="100" onchange="updateBoxSize()" />
+      </label>
+      <label>
+        Height (px):
+        <input type="number" id="heightInput" value="50" onchange="updateBoxSize()" />
+      </label>
+    </div>
+
+    <div id="boxes" class="block-layout">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
